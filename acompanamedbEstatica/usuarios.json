@@ -1,0 +1,25 @@
+{
+  "success": true,
+  "data": [
+    {
+      "id_usuario": 1,
+      "nombre": "Francisco",
+      "apellidos": "Marín",
+      "ciudad": "Madrid",
+      "hospital": "Gregorio Marañón",
+      "enfermedad": "Fibrosis quística",
+      "email": "fran22@mail.es",
+      "telefono": "612345678"
+    },
+    {
+      "id_usuario": 2,
+      "nombre": "Laura",
+      "apellidos": "García",
+      "ciudad": "Barcelona",
+      "hospital": "Vall d'Hebron",
+      "enfermedad": "Lupus",
+      "email": "laura@mail.es",
+      "telefono": "698765432"
+    }
+  ]
+}

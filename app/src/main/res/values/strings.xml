@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">AcompañaMe</string>
+
+    <string name="btnIniciarSesion_bienvenida">INICIAR SESIÓN</string>
+    <string name="btnCrearCuenta_bienvenida">REGISTRARSE</string>
+
+    <string name="editTextUsuario_login">Usuario</string>
+    <string name="editTextPassword_login">Contraseña</string>
+    <string name="btnIniciarSesion_login">INICIAR SESIÓN</string>
+
+    <string name="cabeceraRegistro_login">Registro de usuario</string>
+    <string name="nombreRegistro_login">Nombre</string>
+    <string name="apellidosRegistro_login">Apellidos</string>
+    <string name="ciudadRegistro_login">Ciudad</string>
+    <string name="hospitalRegistro_login">Hospital</string>
+    <string name="enfermedadRegistro_login">Enfermedad</string>
+    <string name="breveDescripcionRegistro_login">Breve descripción</string>
+    <string name="btnSiguiente">SIGUIENTE</string>
+    <string name="email_login">Email</string>
+    <string name="telefono_login">Teléfono</string>
+    <string name="contraseña_login">Password</string>
+    <string name="confirmarContraseña_login">Confirmar Password</string>
+    <string name="btnRegistrarse">REGISTRARSE</string>
+
+    <string name="btnVolverPrincipal">VOLVER A LA PANTALLA PRINCIPAL</string>
+    <string name="registroCompletado">Registro completado</string>
+    <string name="toastErrorCrearUsuario">No se ha podido guardar el usuario correctamente</string>
+
+    <string name="toastErrorLoginUsuario">No se ha podido iniciar sesión</string>
+
+
+    <string name="BienvenidoUser">Bienvenido, </string>
+    <string name="nav_home">Mi Perfil</string>
+    <string name="nav_fetch">Buscar</string>
+    <string name="nav_contacts">Contactos</string>
+    <string name="nav_share">Sobre AcompañaMe</string>
+    <string name="nav_web">Guia Usuario</string>
+    <string name="nav_others">Otros</string>
+    <string name="cerrar_sesion">Cerrar Sesión</string>
+    <string name="bienvenida">Bienvenid@, %1$s</string>
+
+    <string name="perfil_usuario">AcompañaMe - Mi Perfil</string>
+    <string name="descripcion_imagen">Avatar</string>
+    <string name="nombre_miPerfil">NOMBRE</string>
+    <string name="apellidos_miPerfil">APELLIDOS</string>
+    <string name="ciudad_miPerfil">CIUDAD</string>
+    <string name="hospital_miPerfil">HOSPITAL</string>
+    <string name="enfermedad_miPerfil">ENFERMEDAD</string>
+    <string name="descripcion_miPerfil">SOBRE MI</string>
+    <string name="email_miPerfil">EMAIL</string>
+    <string name="telefono_miPerfil">TLF</string>
+
+    <string name="cabecera_sobreNosotros">AcompañaMe - Sobre Nosotros</string>
+    <string name="queEs_sobreNosotros">¿Qué es AcompañaMe?</string>
+    <string name="descripcion_proyecto">Somos un grupo de alumnos de Desarrollo de Aplicaciones Multiplataforma los cuales han querido enfocar el Proyecto Final a ofrecer una idea para que aquellas personas con una enfermedad crónica o en una situación de dificultad por esta puedan ponerse en contacto, buscando grupos de apoyo que le ayuden a superar la situación en la que se encuentran, haciendo así más fácil el proceso.</string>
+    <string name="autoresDelProyecto_sobreNosotros">Autores del proyecto</string>
+    <string name="nombres1_sobreNosotros">Luis César Adán Sánchez-Infante</string>
+    <string name="nombres2_sobreNosotros">Ander Astiz Zurutuza</string>
+    <string name="nombres3_sobreNosotros">David González Paredes</string>
+    <string name="nombres4_sobreNosotros">Santiago Ángel Ruiz Sánchez</string>
+    <string name="descripcion_logo">Logo de IFP</string>
+
+    <string name="introduce_email">Por favor, introduce tu correo electrónico</string>
+    <string name="formato_emailErroneo">El formato del correo electrónico no es válido</string>
+    <string name="introduce_contrasena">Por favor, introduce tu contraseña</string>
+    <string name="confirma_contrasena">Por favor, confirma tu contraseña</string>
+    <string name="formato_contrasenaErroneo">Las contraseñas no coinciden</string>
+    <string name="introduce_nombre">Por favor, introduce tu nombre</string>
+    <string name="introduce_apellidos">Por favor, introduce tus apellidos</string>
+    <string name="introduce_ciudad">Por favor, introduce tu ciudad</string>
+    <string name="introduce_hospital">Por favor, introduce tu hospital</string>
+    <string name="introduce_enfermedad">Por favor, introduce tu enfermedad</string>
+    <string name="introduce_descripcion">Por favor, introduce una breve descripción</string>
+    <string name="introduce_telefono">Por favor, introduce tu número de teléfono</string>
+
+
+
+</resources>

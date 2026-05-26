@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_MiPerfilActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/FondoPantallaInicio"
+    tools:context=".BienvenidaActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_bienvenida"
+        android:layout_width="405dp"
+        android:layout_height="728dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/logo_bienvenida"
+            android:layout_width="match_parent"
+            android:layout_height="632dp"
+            app:srcCompat="@drawable/acompanamelogo" />
+
+        <Button
+            android:id="@+id/btnIniciarSesion_bienvenida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/BotonesInicio"
+            android:text="@string/btnIniciarSesion_bienvenida" />
+
+        <Button
+            android:id="@+id/btnCrearCuenta_bienvenida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/BotonesInicio"
+            android:text="@string/btnCrearCuenta_bienvenida" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

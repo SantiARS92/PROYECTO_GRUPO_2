@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_SobreNosotrosActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/FondoPantallaInicio"
+    tools:context=".SobreNosotrosActivity">
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/espacioEnBlanco1_SobreNosotrosActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/cabecera_SobreNosotrosActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/BotonesInicio"
+                android:gravity="center"
+                android:text="@string/cabecera_sobreNosotros"
+                android:textSize="27sp"/>
+
+            <TextView
+                android:id="@+id/espacioEnBlanco2_SobreNosotrosActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=""/>
+
+            <ImageView
+                android:id="@+id/logo_SobreNosotrosActivity"
+                android:layout_width="363dp"
+                android:layout_height="271dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/descripcion_imagen"
+                android:src="@drawable/acompanamelogo" />
+
+            <TextView
+                android:id="@+id/QueEs_SobreNosotrosActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/BotonesInicio"
+                android:gravity="center"
+                android:text="@string/queEs_sobreNosotros"
+                android:textSize="27sp"/>
+
+            <TextView
+                android:id="@+id/espacioEnBlanco3_SobreNosotrosActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/descripcion_SobreNosotrosActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/descripcion_proyecto"
+                android:textColor="@color/black"
+                android:justificationMode="inter_word"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/espacioEnBlanco4_SobreNosotrosActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/autoreDelProyecto_SobreNosotrosActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/BotonesInicio"
+                android:gravity="center"
+                android:text="@string/autoresDelProyecto_sobreNosotros"
+                android:textSize="27sp"/>
+
+            <TextView
+                android:id="@+id/nombre1_SobreNosotrosActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nombres1_sobreNosotros"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/nombre2_SobreNosotrosActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nombres2_sobreNosotros"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/nombre3_SobreNosotrosActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nombres3_sobreNosotros"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/nombre4_SobreNosotrosActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nombres4_sobreNosotros"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textSize="20sp"/>
+
+            <ImageView
+                android:id="@+id/logoIFP_SobreNosotrosActivity"
+                android:layout_width="377dp"
+                android:layout_height="278dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/descripcion_logo"
+                android:src="@drawable/ifp_logo" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_MiPerfilActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/FondoPantallaInicio"
+    tools:context=".Registro2Activity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout_registro2"
+        android:layout_width="374dp"
+        android:layout_height="369dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.527">
+
+        <EditText
+            android:id="@+id/editTextMail_registro2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:hint="@string/email_login"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/editTextTelefono_registro2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:hint="@string/telefono_login"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editTextPassword_registro2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:hint="@string/contraseña_login"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/editTextConfirmarPassword_registro2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:hint="@string/confirmarContraseña_login"
+            android:inputType="textPassword" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewCabecera_registro2"
+        android:layout_width="216dp"
+        android:layout_height="42dp"
+        android:layout_gravity="center"
+        android:text="@string/cabeceraRegistro_login"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout_registro2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.224" />
+
+    <Button
+        android:id="@+id/btnRegistrarse_registro2"
+        android:layout_width="368dp"
+        android:layout_height="53dp"
+        android:backgroundTint="@color/BotonesInicio"
+        android:text="@string/btnRegistrarse"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout_registro2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

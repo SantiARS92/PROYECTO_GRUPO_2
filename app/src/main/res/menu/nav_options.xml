@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/nav_home"/>
+
+        <item
+            android:id="@+id/nav_fetch"
+            android:icon="@drawable/ic_buscar"
+            android:title="@string/nav_fetch"/>
+
+        <item
+            android:id="@+id/nav_contacts"
+            android:icon="@drawable/ic_contact"
+            android:title="@string/nav_contacts"/>
+
+    </group>
+
+    <item android:title="@string/nav_others">
+
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/nav_share"
+                    android:icon="@drawable/ic_us"
+                    android:title="@string/nav_share"/>
+                <item
+                    android:id="@+id/nav_web"
+                    android:icon="@drawable/ic_guide"
+                    android:title="@string/nav_web"/>
+
+                <item
+                    android:id="@+id/nav_close"
+                    android:icon="@drawable/ic_close"
+                    android:title="@string/cerrar_sesion"/>
+
+
+            </group>
+
+
+        </menu>
+
+    </item>
+
+
+</menu>

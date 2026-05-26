@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_MiPerfilActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/FondoPantallaInicio"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_login"
+        android:layout_width="389dp"
+        android:layout_height="453dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.381">
+
+        <ImageView
+            android:id="@+id/img_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/acompanamelogo" />
+
+        <EditText
+            android:id="@+id/editTextUsuario_login"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:ems="10"
+            android:hint="@string/editTextUsuario_login"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editTextPassword_login"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:ems="10"
+            android:hint="@string/contraseña_login"
+            android:inputType="textPassword" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnIniciarSesion_login"
+        android:layout_width="383dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/BotonesInicio"
+        android:text="@string/btnIniciarSesion_login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_login"
+        app:layout_constraintVertical_bias="0.508" />
+</androidx.constraintlayout.widget.ConstraintLayout>
