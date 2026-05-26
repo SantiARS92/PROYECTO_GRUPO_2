@@ -72,11 +72,11 @@ class Modelo
         }
     }
 
-    public function getUsuariosEnfermedadModelo()
+    public function getUsuarioEnfermedadModelo()
     {
       $gbd = new GestorBD();
         if ($gbd->conectar()) {
-            return $gbd->getUsuariosEnfermedad();
+            return $gbd->getUsuarioEnfermedad();
         }
         else{
             return array();
@@ -105,6 +105,19 @@ class Modelo
         }
 
 }
+
+    public function buscarUsuariosModelo($ciudad, $enfermedad, $id_usuario)
+    {
+       $gbd = new GestorBD();
+        if ($gbd->conectar()) {
+            return $gbd->buscarUsuarios($ciudad, $enfermedad, $id_usuario);
+        }
+        else{
+            return null;
+        }
+
+    }
+
 }
 
 

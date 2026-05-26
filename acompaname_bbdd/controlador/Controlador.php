@@ -1,7 +1,7 @@
 <?php
 header('Content-Type: application/json; charset=utf-8');
-ini_set('display_errors', 0);
-error_reporting(0);
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
 
 require_once("modelo/Modelo.php");
 class Controlador
@@ -100,19 +100,31 @@ class Controlador
         {
             if($_SERVER["REQUEST_METHOD"]=="POST"){
                 $email = $_POST["email"];
-                $password = $_POST["password"];
+                $pw = $_POST["pw"];
                 $modelo=new Modelo();
-                $data=$modelo->loginModelo($email, $password);
-                $salida = array("data"=>$data);
-                echo json_encode($salida);
-                if ($email == "" || $password == "") {
-                    echo "Por favor, complete todos los campos.";
-                }
+                $data=$modelo->loginModelo($email, $pw);
+                if ($data) {
+                    echo json_encode([
+                        "success"    => true,
+                        "id_usuario" => $data["id_usuario"],
+                        "nombre"     => $data["nombre"],
+                        "apellidos"  => $data["apellidos"],
+                        "ciudad"     => $data["ciudad"],
+                        "hospital"   => $data["hospital"],
+                        "enfermedad" => $data["enfermedad"],
+                        "descripcion"=> $data["descripcion"],
+                        "email"      => $data["email"],
+                        "telefono"   => $data["telefono"],
+                        ]);
             }
             else{
-                echo "Credenciales incorrectas";
+                echo json_encode (["success" => false, "message" => "Credenciales incorrectas"]);
+            }
+            }else{
+                echo json_encode (["success" => false, "message" => "Método no permitido"]);
             }
         }
+        
 
         public function registrar() {
 
@@ -125,19 +137,42 @@ class Controlador
                 $descripcion = $_POST["descripcion"];
                 $email = $_POST["email"];
                 $telefono = $_POST["telefono"];
-                $password = $_POST["password"];
+                $pw = $_POST["pw"];
 
-                if ($nombre == "" || $apellidos == "" || $ciudad == "" || $hospital == "" || $enfermedad == "" || $descripcion == "" || $email == "" || $telefono == "" || $password == "") {
+                if ($nombre == "" || $apellidos == "" || $ciudad == "" || $hospital == "" || $enfermedad == "" || $descripcion == "" || $email == "" || $telefono == "" || $pw == "") {
                     echo "Por favor, complete todos los campos.";
                     return;
                 }
 
                 $modelo=new Modelo();
-                $data=$modelo->registrarModelo($nombre, $apellidos, $ciudad, $hospital, $enfermedad, $descripcion, $email, $telefono, $password);
+                $data=$modelo->registrarModelo($nombre, $apellidos, $ciudad, $hospital, $enfermedad, $descripcion, $email, $telefono, $pw);
                 echo json_encode($data);
             }
             else{
                 echo "Error en el registro. Por favor, intente nuevamente.";
+            }
+        }
+
+        public function buscarUsuarios(){
+
+            if($_SERVER["REQUEST_METHOD"]=="POST"){
+
+                if (!isset($_POST["ciudad"], $_POST["enfermedad"], $_POST["id_usuario"])) {
+                    echo json_encode(["success" => false, "message" => "Faltan parámetros"]);
+                    exit;
+                }
+
+                $ciudad = $_POST["ciudad"];
+                $enfermedad = $_POST["enfermedad"];
+                $id_usuario = $_POST["id_usuario"];
+
+                $modelo=new Modelo();
+                $data=$modelo->buscarUsuariosModelo($ciudad, $enfermedad, $id_usuario);
+                echo json_encode(["success" => true, "usuarios" => $data]);
+         
+            }
+            else{
+                echo json_encode (["success" => false, "message" => "Método no permitido"]);
             }
         }
 

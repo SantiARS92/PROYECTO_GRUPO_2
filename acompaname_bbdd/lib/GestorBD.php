@@ -10,7 +10,7 @@ private $conn;
 
     public function conectar()
     {
-        $this->conn = new mysqli("localhost", "root", "", "acompanamedb");
+        $this->conn = new mysqli("localhost", "root", "", "acompaname_bbdd");
         $this->conn->set_charset("utf8mb4");
         if ($this->conn->connect_error!=null) {
             return false;
@@ -104,7 +104,7 @@ private $conn;
 
     public function getUsuarios()
     {
-        $sql = "SELECT id_usuario, nombre, apellidos, ciudad, hospitale, enfermedad, descripcion, email, telefono FROM usuario";
+        $sql = "SELECT id_usuario, nombre, apellidos, ciudad, hospital, enfermedad, descripcion, email, telefono FROM usuario";
         $data=array();
         $result = $this->conn->query($sql);
         $i=0;
@@ -136,8 +136,7 @@ private $conn;
 
     public function login($email, $pw)
     {
-        $sql = "SELECT id_usuario, nombre, apellidos, ciudad, hospital, enfermedad, descripcion, email, telefono FROM usuario WHERE email = '$email' AND password = '$pw'";
-        $data=array();
+        $sql = "SELECT id_usuario, nombre, apellidos, ciudad, hospital, enfermedad, descripcion, email, telefono FROM usuario WHERE email = ? AND pw = ?";
         $stmt = $this->conn->prepare($sql);
         $stmt->bind_param("ss", $email, $pw);
         $stmt->execute();
@@ -147,19 +146,33 @@ private $conn;
 
 
 
-    public function registrar($nombre, $apellidos, $ciudad, $hospital, $enfermedad, $descripcion, $email, $telefono)
+    public function registrar($nombre, $apellidos, $ciudad, $hospital, $enfermedad, $descripcion, $email, $telefono, $pw)
     {
-        $sql = "INSERT INTO usuario (nombre, apellidos, ciudad, hospital, enfermedad, descripcion, email, telefono) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+        $sql = "INSERT INTO usuario (nombre, apellidos, ciudad, hospital, enfermedad, descripcion, email, telefono, pw) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
         $stmt = $this->conn->prepare($sql);
-        $stmt->bind_param("ssssssss", $nombre, $apellidos, $ciudad, $hospital, $enfermedad, $descripcion, $email, $telefono);
+        $stmt->bind_param("sssssssss", $nombre, $apellidos, $ciudad, $hospital, $enfermedad, $descripcion, $email, $telefono, $pw);
         
         if ($stmt->execute()) {
-            return ["message" => "Usuario registrado exitosamente"];
-        } if ($this->conn->errno === 1062) {
-            return ["message" => "El email ya está registrado"];
+            return ["success" => true, "message" => "Usuario registrado correctamente"];
+        } elseif ($this->conn->errno === 1062) {
+            return ["success" => false, "message" => "El email ya está registrado"];
         } else {
-            return ["message" => "Error al registrar el usuario"];
+            return ["success" => false, "message" => "Error al registrar el usuario"];
         }
+    }
+
+    public function buscarUsuarios($ciudad,$enfermedad, $id_usuario)
+    {
+        $sql= "SELECT id_usuario, nombre, apellidos, ciudad, hospital, enfermedad, descripcion, email, telefono FROM usuario WHERE ciudad = ? AND enfermedad = ? AND id_usuario != ?";
+        $stmt = $this->conn->prepare($sql);
+        $stmt->bind_param("ssi", $ciudad, $enfermedad, $id_usuario);
+        $stmt->execute();
+        $result =$stmt->get_result();
+        $data= [];
+        while ($row = $result->fetch_assoc()){
+            $data[] = $row;
+        }
+        return $data;
     }
 }
 
