@@ -21,7 +21,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Usuario"
+                android:text="@string/usuario_miPerfil"
                 android:textSize="30sp"
                 android:textStyle="bold"
                 android:gravity="center"
@@ -37,7 +37,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Nombre"
+                android:text="@string/nombreRegistro_login"
                 android:textStyle="bold"
                 android:textColor="@color/BotonesInicio"
                 android:gravity="center"
@@ -55,7 +55,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ciudad"
+                android:text="@string/ciudadRegistro_login"
                 android:textStyle="bold"
                 android:textColor="@color/BotonesInicio"
                 android:gravity="center"
@@ -73,7 +73,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Enfermedad"
+                android:text="@string/enfermedadRegistro_login"
                 android:textStyle="bold"
                 android:textColor="@color/BotonesInicio"
                 android:gravity="center"
@@ -91,7 +91,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Email"
+                android:text="@string/email_login"
                 android:textStyle="bold"
                 android:textColor="@color/BotonesInicio"
                 android:gravity="center"

@@ -100,9 +100,9 @@ public class UserMainActivity extends AppCompatActivity {
                     intent.putExtra("enfermedad", enfermedad);
                     startActivity(intent);
 
-                } else if (itemID == R.id.nav_contacts){
-                    Intent intent = new Intent(UserMainActivity.this, ContactosActivity.class);
-                    startActivity(intent);
+                } else if (itemID == R.id.nav_contacts){ //Próximamente se ejecutará.
+                    //Intent intent = new Intent(UserMainActivity.this, ContactosActivity.class);
+                    //startActivity(intent);
 
                 } else if (itemID == R.id.nav_share){
                     Intent intent = new Intent(UserMainActivity.this, SobreNosotrosActivity.class);

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AcompañaMe</string>
+    <string name="app_name" translatable="false">AcompañaMe</string>
 
     <string name="btnIniciarSesion_bienvenida">INICIAR SESIÓN</string>
     <string name="btnCrearCuenta_bienvenida">REGISTRARSE</string>
@@ -48,16 +48,18 @@
     <string name="enfermedad_miPerfil">ENFERMEDAD</string>
     <string name="descripcion_miPerfil">SOBRE MI</string>
     <string name="email_miPerfil">EMAIL</string>
-    <string name="telefono_miPerfil">TLF</string>
+    <string name="telefono_miPerfil">TELEFONO</string>
+    <string name="usuario_miPerfil">USUARIO</string>
+    <string name="descripcion">Descripción</string>
 
     <string name="cabecera_sobreNosotros">AcompañaMe - Sobre Nosotros</string>
     <string name="queEs_sobreNosotros">¿Qué es AcompañaMe?</string>
     <string name="descripcion_proyecto">Somos un grupo de alumnos de Desarrollo de Aplicaciones Multiplataforma los cuales han querido enfocar el Proyecto Final a ofrecer una idea para que aquellas personas con una enfermedad crónica o en una situación de dificultad por esta puedan ponerse en contacto, buscando grupos de apoyo que le ayuden a superar la situación en la que se encuentran, haciendo así más fácil el proceso.</string>
     <string name="autoresDelProyecto_sobreNosotros">Autores del proyecto</string>
-    <string name="nombres1_sobreNosotros">Luis César Adán Sánchez-Infante</string>
-    <string name="nombres2_sobreNosotros">Ander Astiz Zurutuza</string>
-    <string name="nombres3_sobreNosotros">David González Paredes</string>
-    <string name="nombres4_sobreNosotros">Santiago Ángel Ruiz Sánchez</string>
+    <string name="nombres1_sobreNosotros" translatable="false">Luis César Adán Sánchez-Infante</string>
+    <string name="nombres2_sobreNosotros" translatable="false">Ander Astiz Zurutuza</string>
+    <string name="nombres3_sobreNosotros" translatable="false">David González Paredes</string>
+    <string name="nombres4_sobreNosotros" translatable="false">Santiago Ángel Ruiz Sánchez</string>
     <string name="descripcion_logo">Logo de IFP</string>
 
     <string name="introduce_email">Por favor, introduce tu correo electrónico</string>

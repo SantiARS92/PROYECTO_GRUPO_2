@@ -1,0 +1,74 @@
+<resources>
+
+    <string name="btnIniciarSesion_bienvenida">SAIOA HASI</string>
+    <string name="btnCrearCuenta_bienvenida">ERREGISTRATU</string>
+
+    <string name="editTextUsuario_login">Erabiltzailea</string>
+    <string name="editTextPassword_login">Pasahitza</string>
+    <string name="btnIniciarSesion_login">SAIOA HASI</string>
+
+    <string name="cabeceraRegistro_login">Erabiltzailearen erregistroa</string>
+    <string name="nombreRegistro_login">Izena</string>
+    <string name="apellidosRegistro_login">Abizena</string>
+    <string name="ciudadRegistro_login">Hiria</string>
+    <string name="hospitalRegistro_login">Ospitala</string>
+    <string name="enfermedadRegistro_login">Gaixotasuna</string>
+    <string name="breveDescripcionRegistro_login">Azalpen labur bat</string>
+    <string name="btnSiguiente">HURRENGOA</string>
+    <string name="email_login">Emaila</string>
+    <string name="telefono_login">Telefonoa</string>
+    <string name="contraseña_login">Pasahitza</string>
+    <string name="confirmarContraseña_login">Pasahitza berretzi</string>
+    <string name="btnRegistrarse">ERREGISTRATU</string>
+
+    <string name="btnVolverPrincipal">HASIERAKO ORRIALDERA ITZULI</string>
+    <string name="registroCompletado">Erregistroa bukatuta</string>
+    <string name="toastErrorCrearUsuario">Ezin izan da erabiltzailea zuzen gorde</string>
+
+    <string name="toastErrorLoginUsuario">Ezin da saioa hasi</string>
+
+
+    <string name="BienvenidoUser">Ongi etorri, </string>
+    <string name="nav_home">Nire perfila</string>
+    <string name="nav_fetch">Bilatu</string>
+    <string name="nav_contacts">Kontaktuak</string>
+    <string name="nav_share">AcompañaMeri buruz</string>
+    <string name="nav_web">Erabiltzailearen gida</string>
+    <string name="nav_others">Besteak</string>
+    <string name="cerrar_sesion">Saioa amaitu</string>
+    <string name="bienvenida">Ongi etorri, %1$s</string>
+
+    <string name="perfil_usuario">AcompañaMe - Nire perfila</string>
+    <string name="descripcion_imagen">Abatarra</string>
+    <string name="nombre_miPerfil">IZENA</string>
+    <string name="apellidos_miPerfil">ABIZENA</string>
+    <string name="ciudad_miPerfil">HIRIA</string>
+    <string name="hospital_miPerfil">OSPITALA</string>
+    <string name="enfermedad_miPerfil">GAIXOTASUNA</string>
+    <string name="descripcion_miPerfil">NIRI BURUZ</string>
+    <string name="email_miPerfil">EMAILA</string>
+    <string name="telefono_miPerfil">TELEFONOA</string>
+
+    <string name="descripcion">Deskribapena</string>
+    <string name="cabecera_sobreNosotros">AcompañaMe - Guri buruz</string>
+    <string name="queEs_sobreNosotros">Zer da AcompañaMe?</string>
+    <string name="descripcion_proyecto">DAM fp-ko ikasle talde bat gara, gure proiektua gaixotasun kroniko bat edo gaixotasun baten ondorioz egoera latz batean dagoen pertsonak ezagutu eta elkartzeko aplikazio bat egitea izan da,egoera berdinean dauden pertsonen bidez alkar lagundu ahal izateko.</string>
+    <string name="autoresDelProyecto_sobreNosotros">Proiektuaren egileak</string>
+    <string name="descripcion_logo">IFPko logoa</string>
+
+    <string name="introduce_email">Mesedez, sartu ezazu zure elektronikoa</string>
+    <string name="formato_emailErroneo">posta elektronikoaren formatua ez da egokia</string>
+    <string name="introduce_contrasena">Mesedez, sartu ezazu zure pasahitza</string>
+    <string name="confirma_contrasena">Mesedez, zure pasahitza berretsi</string>
+    <string name="formato_contrasenaErroneo">pasahitzek ez dute bat egiten</string>
+    <string name="introduce_nombre">Mesedez, sartu ezazu zure izena</string>
+    <string name="introduce_apellidos">Mesedez, sartu ezazu zure abizena</string>
+    <string name="introduce_ciudad">Mesedez, sartu ezazu zure hiria</string>
+    <string name="introduce_hospital">Mesedez, sartu ezazu zure ospitala</string>
+    <string name="introduce_enfermedad">Mesedez, sartu ezazu zure gaixotasuna</string>
+    <string name="introduce_descripcion">Mesedez, sartu ezazu laburpen labur bat</string>
+    <string name="introduce_telefono">Mesedez, sartu ezazu zure telefono zenbakia</string>
+    <string name="usuario_miPerfil">ERABILTZAILEAREN</string>
+
+
+</resources>
