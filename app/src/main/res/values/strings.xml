@@ -18,8 +18,8 @@
     <string name="btnSiguiente">SIGUIENTE</string>
     <string name="email_login">Email</string>
     <string name="telefono_login">Teléfono</string>
-    <string name="contraseña_login">Password</string>
-    <string name="confirmarContraseña_login">Confirmar Password</string>
+    <string name="contraseña_login">Contraseña</string>
+    <string name="confirmarContraseña_login">Confirmar Contraseña</string>
     <string name="btnRegistrarse">REGISTRARSE</string>
 
     <string name="btnVolverPrincipal">VOLVER A LA PANTALLA PRINCIPAL</string>

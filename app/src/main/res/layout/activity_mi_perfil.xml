@@ -9,12 +9,15 @@
     tools:context=".MiPerfilActivity">
 
     <ScrollView
-        android:layout_width="409dp"
+        android:layout_width="0dp"
         android:layout_height="729dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_max="800dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -26,24 +29,24 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text=""/>
+                android:text="" />
 
             <TextView
                 android:id="@+id/cabecera_miPerfilActivity"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
-                android:textColor="@color/BotonesInicio"
                 android:gravity="center"
                 android:text="@string/perfil_usuario"
-                android:textSize="30sp"/>
+                android:textColor="@color/BotonesInicio"
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/espacioEnBlanco2_miPerfilActivity"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text=""/>
+                android:text="" />
 
             <ImageView
                 android:id="@+id/imagenUsuario_miPerfilActivity"
@@ -58,7 +61,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text=""/>
+                android:text="" />
 
             <TextView
                 android:id="@+id/nombre_miPerfilActivity"
@@ -68,7 +71,7 @@
                 android:text="@string/nombre_miPerfil"
                 android:textColor="@color/BotonesInicio"
                 android:textSize="25sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/nombreUser_miPerfilActivity"
@@ -77,7 +80,7 @@
                 android:gravity="center"
                 android:text=""
                 android:textSize="20sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/apellidos_miPerfilActivity"
@@ -86,8 +89,8 @@
                 android:gravity="center"
                 android:text="@string/apellidos_miPerfil"
                 android:textColor="@color/BotonesInicio"
-                android:textStyle="bold"
-                android:textSize="25sp"/>
+                android:textSize="25sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/apellidosUser_miPerfilActivity"
@@ -96,7 +99,7 @@
                 android:gravity="center"
                 android:text=""
                 android:textSize="20sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/ciudad_miPerfilActivity"
@@ -105,8 +108,8 @@
                 android:gravity="center"
                 android:text="@string/ciudad_miPerfil"
                 android:textColor="@color/BotonesInicio"
-                android:textStyle="bold"
-                android:textSize="25sp"/>
+                android:textSize="25sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/ciudadUser_miPerfilActivity"
@@ -115,7 +118,7 @@
                 android:gravity="center"
                 android:text=""
                 android:textSize="20sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/hospital_miPerfilActivity"
@@ -124,8 +127,8 @@
                 android:gravity="center"
                 android:text="@string/hospital_miPerfil"
                 android:textColor="@color/BotonesInicio"
-                android:textStyle="bold"
-                android:textSize="25sp"/>
+                android:textSize="25sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/hospitalUser_miPerfilActivity"
@@ -134,7 +137,7 @@
                 android:gravity="center"
                 android:text=""
                 android:textSize="20sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/enfermedad_miPerfilActivity"
@@ -143,8 +146,8 @@
                 android:gravity="center"
                 android:text="@string/enfermedad_miPerfil"
                 android:textColor="@color/BotonesInicio"
-                android:textStyle="bold"
-                android:textSize="25sp"/>
+                android:textSize="25sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/enfermedadUser_miPerfilActivity"
@@ -153,7 +156,7 @@
                 android:gravity="center"
                 android:text=""
                 android:textSize="20sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/sobreMi_miPerfilActivity"
@@ -162,8 +165,8 @@
                 android:gravity="center"
                 android:text="@string/descripcion_miPerfil"
                 android:textColor="@color/BotonesInicio"
-                android:textStyle="bold"
-                android:textSize="25sp"/>
+                android:textSize="25sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/sobreMiUser_miPerfilActivity"
@@ -171,7 +174,7 @@
                 android:layout_height="wrap_content"
                 android:text=""
                 android:textSize="20sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/email_miPerfilActivity"
@@ -180,8 +183,8 @@
                 android:gravity="center"
                 android:text="@string/email_miPerfil"
                 android:textColor="@color/BotonesInicio"
-                android:textStyle="bold"
-                android:textSize="25sp"/>
+                android:textSize="25sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/emailUser_miPerfilActivity"
@@ -190,7 +193,7 @@
                 android:gravity="center"
                 android:text=""
                 android:textSize="20sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/tlf_miPerfilActivity"
@@ -199,8 +202,8 @@
                 android:gravity="center"
                 android:text="@string/telefono_miPerfil"
                 android:textColor="@color/BotonesInicio"
-                android:textStyle="bold"
-                android:textSize="25sp"/>
+                android:textSize="25sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/telefonoUser_miPerfilActivity"
@@ -209,16 +212,14 @@
                 android:gravity="center"
                 android:text=""
                 android:textSize="20sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/espacioEnBlanco4_miPerfilActivity"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text=""/>
-
-
+                android:text="" />
 
 
         </LinearLayout>
